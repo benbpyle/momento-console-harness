@@ -1,0 +1,23 @@
+[package]
+name = "momento-console-harness"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+tokio = { version = "1.44.1", features = ["full"] }
+serde = { version = "1.0.215", features = ["derive"] }
+serde_json = "1"
+tracing = "0.1.41"
+
+
+opentelemetry = "0.28.0"
+# opentelemetry-datadog = { version = "0.16.0", features = ["reqwest-client"] }
+opentelemetry-otlp = { version = "0.28.0", features = ["reqwest-client", "grpc-tonic"] }
+opentelemetry_sdk = { version = "0.28.0", features = ["rt-tokio", "rt-tokio-current-thread"] }
+tracing-opentelemetry = "0.29.0"
+tracing-subscriber = { version = "0.3.19", features = ["json", "env-filter"] }
+
+reqwest = "0.12.15"
+aws-sdk-lambda = "1.73.0"
+aws-config = "1.6.0"
