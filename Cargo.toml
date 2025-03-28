@@ -21,3 +21,4 @@ tracing-subscriber = { version = "0.3.19", features = ["json", "env-filter"] }
 reqwest = "0.12.15"
 aws-sdk-lambda = "1.73.0"
 aws-config = "1.6.0"
+momento = "0.49.0"
